@@ -1,0 +1,47 @@
+mega-clock {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+colon {
+    display: flex;
+    flex-direction: column;
+}
+
+colon dot {
+    height: 40px;
+    width: 40px;
+}
+
+clocks-section{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(6, 50px);
+    background: gainsboro;
+}
+
+clocks-section, colon dot {
+    margin: 20px 10px;
+    border: 5px solid coral;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px 0 gray;
+}
+
+clock{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    border-radius: 30px;
+    background: white;
+}
+
+arrow{
+    display: block;
+    height: 50%;
+    transform-origin: bottom;
+    outline: 3px solid black;
+    transition: transform 0.5s;
+}
